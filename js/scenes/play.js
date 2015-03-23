@@ -84,6 +84,7 @@ game.PlayScene = me.ScreenObject.extend({
 
             case this.SceneStates.NextTurn:
                 this.setState(this.SceneStates.NextMove);
+		me.audio.play('abyss', false); 
             break;
 
             // Human player selects chance or spellcast
